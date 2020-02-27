@@ -1,0 +1,16 @@
+int1=420
+int2=69
+float1=24.1
+float2=43125.1412
+string1="ala"
+string2="ma"
+bool1=True
+bool2=False
+print(int1)
+print(int2)
+print(float1)
+print(float2)
+print(string1)
+print(string2)
+print(bool1)
+print(bool2)
