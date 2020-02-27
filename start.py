@@ -1,4 +1,3 @@
-#https://github.com/kropiak/wd
 print("hello world!")
 
 tekst = "hello world!"
