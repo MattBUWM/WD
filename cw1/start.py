@@ -69,4 +69,4 @@ from math import pi as mpi
 import math as m
 
 print(mpi)
-m.pow()
+#m.pow()
