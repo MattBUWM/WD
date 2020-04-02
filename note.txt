@@ -1,6 +1,3 @@
-git config --local --add user.name MattBUWM
-git config --local --add user.email 155671@student.uwm.edu.pl
-
 echo "# WD" >> README.md
 git init
 git add README.md
