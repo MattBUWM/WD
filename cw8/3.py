@@ -26,8 +26,8 @@ def pp6(df):
 def pp7(df):
     dfc=df.copy()
     dfc['Data zamowienia']=pd.to_datetime(dfc['Data zamowienia'])
-    dfc[dfc['Data zamowienia'].dt.year==2004].to_csv('cw8/zamowienia_2004.csv',sep=';')
-    dfc[dfc['Data zamowienia'].dt.year==2005].to_csv('cw8/zamowienia_2005.csv',sep=';')
+    dfc[dfc['Data zamowienia'].dt.year==2004].to_csv('cw8/zamowienia_2004.csv',sep=';',index=False)
+    dfc[dfc['Data zamowienia'].dt.year==2005].to_csv('cw8/zamowienia_2005.csv',sep=';',index=False)
 
 df=pd.read_csv('cw8/datasets/zamowienia.csv',delimiter=';')
 
