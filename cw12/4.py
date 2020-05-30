@@ -23,11 +23,6 @@ def get_games_info_from_page(url):
 
 url='https://www.metacritic.com/browse/games/genre/metascore/strategy/all?view=detailed&page='
 http=urllib3.PoolManager()
-#zadanie3
+#zadanie4
 gry=get_games_info_from_page(url+'0')
 df=pd.DataFrame(gry)
-#zadanie4
-for x in range(1,10):
-    gry=get_games_info_from_page(url+str(x))
-    df=df.append(pd.DataFrame(gry),ignore_index=True)
-print(df.where(df['platforma']=='PC').sort_values('ocena',ascending=False).head(10))
