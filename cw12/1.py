@@ -4,7 +4,10 @@ from lxml import html
 url = "https://boardgamegeek.com"
 data = requests.get(url)
 page = html.fromstring(data.text)
-xpath='//*[@id="results_1"]//a'
-foundElements = page.xpath(xpath)
-for element in foundElements :
-    print(element.text)
+
+#chodźby nie wiem co próbuję nic nie chce działać, nawet jak bezpośrednio z przeglądarki skopiuję xpath dla elementów <a>
+for x in range (2,6+2+1):
+    xpath='//*[@id="results_1"]/div/div/div[2]/div['+str(x)+']/h2/a'
+    foundElement = page.xpath(xpath)
+    print(foundElement)
+    print(foundElement[0].get('ng-href'))
