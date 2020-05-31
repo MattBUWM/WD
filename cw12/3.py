@@ -40,7 +40,7 @@ for x in labels:
     data[x]=[]
 
 for x in table.xpath('.//*[@id="row_"]'):
-    for y in range(5+1):
+    for y in range(len(labels)):
         if labels[y] == '' or labels[y] == 'Shop':continue
         if labels[y] == 'Board Game Rank':
             data[labels[y]].append(int(x.xpath('./td['+str(y+1)+']/a/@name')[0].strip()))
